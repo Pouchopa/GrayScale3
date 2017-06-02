@@ -13,13 +13,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class GrayScale {
+public class GrayScale3 {
 
    BufferedImage  image;
    int width;
    int height;
    
-   public GrayScale(String fileName) throws IOException {
+   public GrayScale3(String fileName) throws IOException {
 
 		File dest = new File("output.stl");
 		File source = new File(fileName);
@@ -42,6 +42,6 @@ public class GrayScale {
    
    static public void main(String args[]) throws Exception 
    {
-      GrayScale obj = new GrayScale(args[0]);
+      GrayScale3 obj = new GrayScale3(args[0]);
    }
 }
